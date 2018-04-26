@@ -2,13 +2,14 @@
 Testing browser's push notification in laravel
 
 extraced from https://github.com/laravel-notification-channels/webpush
+install dependencies
 
 1.
-whip up the composer package 
 composer require laravel-notification-channels/webpush
 
-
 2.
+
+update 
 // config/app.php
 
 
@@ -21,6 +22,8 @@ composer require laravel-notification-channels/webpush
 
 3.
 Add the NotificationChannels\WebPush\HasPushSubscriptions trait to your User model:
+
+example:
 
 use NotificationChannels\WebPush\HasPushSubscriptions;
 
@@ -58,6 +61,14 @@ This command will set VAPID_PUBLIC_KEY and VAPID_PRIVATE_KEYin your .env file.
 These keys must be safely stored and should not change.
 
 If you still want support Google Cloud Messaging set the GCM_KEY and GCM_SENDER_ID in your .env file.
+
+
+
+
+
+
+
+
 
 
 Usage
