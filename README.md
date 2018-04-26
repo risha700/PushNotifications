@@ -10,6 +10,8 @@ composer require laravel-notification-channels/webpush
 
 2.
 // config/app.php
+
+
 'providers' => [
     ...
     NotificationChannels\WebPush\WebPushServiceProvider::class,
